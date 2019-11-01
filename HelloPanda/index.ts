@@ -2,7 +2,7 @@ import { AzureFunction, Context, HttpRequest } from "@azure/functions"
 import { getPandaImage, getPandaFact } from "../common/pandaHelpers"
 
 // This function could easily be repurposed into two separate functions for a backend
-// API to fetch a panda image url and a panda fact.
+// API to fetch a random panda image url and a panda fact.
 const run: AzureFunction = async function (context: Context, req: HttpRequest): Promise<any> {  
     // Use common helper functions.
     // (Note: any function in the function app can import these methods) 
