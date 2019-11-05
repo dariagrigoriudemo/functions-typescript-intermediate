@@ -9,7 +9,7 @@ const getPandaImage = async function(log: Logger): Promise<string> {
         log(`Returning url "${url}"`);
         return url;
     } catch(err) {
-        log.error("Error while getting image url.", err);
+        log.error("Error while getting panda image url.", err);
     }
 }
 
