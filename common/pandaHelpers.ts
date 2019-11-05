@@ -5,7 +5,7 @@ import * as randomFact from "panda-facts"
 const getPandaImage = async function(log: Logger): Promise<string> {
     log("Getting panda image");
     try {
-        const url = await randomPuppy('panda');
+        const url = await randomPuppy('puppies');
         log(`Returning url "${url}"`);
         return url;
     } catch(err) {
